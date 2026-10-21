@@ -4,16 +4,16 @@
   
 </head>
   <body>
-    <button onclick="OS=window.open('https://matwindow.github.io/OS2/', 'MatOS 2.0', `width=${xs},height=${ys},popup=yes`)">
+    <button onclick="window.OS=window.open('https://matwindow.github.io/OS2/', 'MatOS 2.0', `width=${window.xsa},height=${window.ysa},popup=yes`)">
   Start
 </button>
  <button onclick="stop()">Stop</button>
-    <script>let OS=null
-      let xs=300
-      let ys=screen.availHeight
+    <script>window.OS=null
+      window.xsa=300
+      window.ysa=screen.availHeight
       function stop(){
-  if(OS&&!OS.closed){
-    OS.close()
+  if(window.OS&&!window.OS.closed){
+    window.OS.close()
   }
 }</script>
   </body>
