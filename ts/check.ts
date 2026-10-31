@@ -1,1 +1,1 @@
-console.log("%cType%cscript%c is %c Suported!","color: blue;","color: cyan;","color: white;","color: lime")
+console.log("%cType%cscript%c is %c Supported!","color: blue;","color: cyan;","color: white;","color: lime")
