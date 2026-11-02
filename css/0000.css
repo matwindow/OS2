@@ -1,24 +1,24 @@
 
 html, body {
-  cursor: url(themes/normal/cursors/normal.svg) 0 0, auto;
+  cursor: url(../themes/normal/cursors/normal.svg) 0 0, auto;
 }
 
 button {
-  cursor: url(themes/normal/cursors/point.svg) 0 0, pointer;
+  cursor: url(../themes/normal/cursors/point.svg) 0 0, pointer;
 }
 
 a {
-  cursor: url(themes/normal/cursors/link.svg) 0 0, alias;
+  cursor: url(../themes/normal/cursors/link.svg) 0 0, alias;
 }
 
 input {
-  cursor: url(themes/normal/cursors/mouse-cell.svg) 0 0, cell;
+  cursor: url(../themes/normal/cursors/mouse-cell.svg) 0 0, cell;
 }
 
 textarea {
-  cursor: url(themes/normal/cursors/text.svg) 0 0, text;
+  cursor: url(../themes/normal/cursors/text.svg) 0 0, text;
 }
 
 select {
-  cursor: url(themes/normal/cursors/arrow-mega.svg) 0 0, cell;
+  cursor: url(../themes/normal/cursors/arrow-mega.svg) 0 0, cell;
 }
