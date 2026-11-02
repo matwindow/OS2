@@ -1,0 +1,11 @@
+:root {
+  --OS-theme: "normal"; 
+}
+
+html, body {
+  cursor: url("themes/" var(--OS-theme) "/cursors/normal.svg") 0 0, auto;
+}
+
+button {
+  cursor: url("themes/" var(--OS-theme) "/cursors/point.svg") 0 0, pointer;
+}
