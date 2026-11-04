@@ -2,7 +2,7 @@ html, body {
   cursor: url("/OS2/themes/normal/cursors/normal.svg") 0 0, auto;
 }
 
-button {
+button,input[type="submit"],input[type="button"],input[type="image"] {
   cursor: url("/OS2/themes/normal/cursors/point.svg") 0 0, pointer;
 }
 
@@ -10,15 +10,49 @@ a {
   cursor: url("/OS2/themes/normal/cursors/link.svg") 0 0, alias;
 }
 
-input {
-  cursor: url("/OS2/themes/normal/cursors/mouse-cell.svg") 0 0, cell;
+input[type="password"] {
+  cursor: url("/OS2/themes/normal/cursors/mouse-password.svg") 0 0, text;
 }
 
-textarea {
+input[type="email"] {
+  cursor: url("/OS2/themes/normal/cursors/mouse-email.svg") 0 0, text;
+}
+
+input[type="number"],input[type="tel"],input[type="range"] {
+  cursor: url("/OS2/themes/normal/cursors/mouse-number.svg") 0 0, text;
+}
+
+input[type="search"],input[type="url"] {
+  cursor: url("/OS2/themes/normal/cursors/search.svg") 0 0, text;
+}
+
+
+textarea,input[type="text"] {
   cursor: url("/OS2/themes/normal/cursors/text.svg") 0 0, text;
 }
 
-select {
+input[type="color"] {
+  cursor: url("/OS2/themes/normal/cursors/crosshair.svg") 0 0, text;
+}
+
+
+input[type="date"],input[type="datetime-local"],input[type="time"],input[type='month'],input[type='week'] {
+  cursor: url("/OS2/themes/normal/cursors/time.svg") 0 0, text;
+}
+
+select,input[type="checkbox"],input[type="radio"] {
   cursor: url("/OS2/themes/normal/cursors/mouse-cell.svg") 0 0, cell;
 }
 
+input[type="hidden"] {
+  cursor: url("/OS2/themes/normal/cursors/arrow-mega.svg") 0 0, cell;
+}
+
+
+
+input[type="reset"] {
+  cursor: url("/OS2/themes/normal/cursors/reset.svg") 0 0, pointer;
+}
+input[type="file"] {
+  cursor: url("/OS2/themes/normal/cursors/magic-up.svg") 0 0, auto;
+}
