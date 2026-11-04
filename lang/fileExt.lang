@@ -1,0 +1,25 @@
+$ Text formats
+txt->'plain TeXT'
+rtf->'Rich Text Format'
+pdf->'Portable Document Format'
+$ Picture formats
+png->'Portable Network Graphics'
+svg->'Scalable Vector Graphics'
+matrect->'MATwindow`s RECTangle image'
+$ System formats
+log->'system LOG'
+ini->'INItalization'
+cfg->'System Configuration Manifest'
+lang->'LANGuage config'$ Its this file!
+json->'JavaScript Object Notation'
+csv->'Comma Seperated Values'
+$ Programing langs formats
+phy->'PYtHon'
+mats->'MATwindow`s matScript'
+$ App formats
+apk->'Android PacKage'
+exe->'EXEcutable'
+matexe->'MATwindow`s EXEcutable'
+matjs->'MATwindow`s JavaScript executable'
+$ Temp format
+temp->'TEMPoraly file'
