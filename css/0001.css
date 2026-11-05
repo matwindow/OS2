@@ -1,8 +1,9 @@
 .desktop .taskbar {
   position: fixed;
   bottom: 0;
-   left: 50%;
-  transform: translateX(-50%);
+   left: 0;
+  right: 0;
+  margin-inline: auto;
   width: var(--taskbar-x-scale,90%);
   height: var(--taskbar-y-scale,20%);
   background-color: var(--taskbar-color,rgba(24, 22, 54, 0.7));
