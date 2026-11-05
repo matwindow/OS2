@@ -1,4 +1,7 @@
 .desktop .taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: var(--taskbar-x-scale,90%);
   height: var(--taskbar-y-scale,20%);
   background-color: var(--taskbar-color,rgba(24, 22, 54, 0.7));
