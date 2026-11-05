@@ -6,3 +6,4 @@
   backdrop-filter: blur(var(--taskbar-blur,10px)); 
   -webkit-backdrop-filter: blur(var(--taskbar-blur,10px)); 
 }
+ 
