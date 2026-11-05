@@ -3,6 +3,6 @@
   height: var(--taskbar-y-scale,20%);
   background-color: var(--taskbar-color,rgba(24, 22, 54, 0.7));
   border-radius: var(--taskbar-round,14px); 
-  backdrop-filter: var(blur(--taskbar-blur,10px)); 
-  -webkit-backdrop-filter: var(blur(--taskbar-blur,10px)); 
+  backdrop-filter: blur(var(--taskbar-blur,10px)); 
+  -webkit-backdrop-filter: blur(var(--taskbar-blur,10px)); 
 }
