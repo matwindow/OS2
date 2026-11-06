@@ -12,5 +12,9 @@
   -webkit-backdrop-filter: blur(var(--taskbar-blur,10px)); 
 }
  
- 
+.desktop .taskbar .appicon{
+  width: 8%;
+  height: 8%;
+  background-image: var(--taskbar-app-icon-image,url("/OS2/svg/extra/stop.svg"))
+}
  
