@@ -7,7 +7,7 @@
   width: var(--taskbar-x-scale,90%);
   height: var(--taskbar-y-scale,20%);
   background-color: var(--taskbar-color,rgba(24, 22, 54, 0.7));
-  border-radius: var(--taskbar-round,60px); 
+  border-radius: var(--taskbar-round,100%); 
   backdrop-filter: blur(var(--taskbar-blur,10px)); 
   -webkit-backdrop-filter: blur(var(--taskbar-blur,10px)); 
 }
