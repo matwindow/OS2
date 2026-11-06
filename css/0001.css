@@ -1,6 +1,6 @@
 .desktop .taskbar {
   position: fixed;
-  bottom: 0;
+  bottom: var(--taskbar-float,20px);
    left: 0;
   right: 0;
   margin-inline: auto;
