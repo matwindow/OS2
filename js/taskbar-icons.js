@@ -1,3 +1,4 @@
+window.ThisOS.taskbar={}
 window.ThisOS.taskbar.icons=[{icon:'/OS/svg/extra/start'}]
 window.ThisOS.taskbar.iconcon=document.querySelector('.taskbar .icons');
 for (let This_Icon_Id of window.ThisOS.taskbar.icons){
