@@ -15,6 +15,6 @@
 .desktop .taskbar .icon{
   width: 8%;
   height: 8%;
-  background-image: var(--taskbar-app-icon-image,url("/OS2/svg/extra/stop.svg"))
+  background-image: var(--bg-image,url("/OS2/svg/extra/stop.svg"))
 }
  
