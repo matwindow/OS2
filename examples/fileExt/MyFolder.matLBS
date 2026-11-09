@@ -1,4 +1,0 @@
-^ This is a comment
-Path;C:/MyFolder/ ^ File Path to the folder/file
-Order;1 ^ Order of where its placed (put a very small negative number, example: -10000 to make it be at the start. if you want it to be at the end, use 100000)
-Icon; ^ Leave blank to use the folders/files icon, put a path to a svg,png,jpeg,ico or other file to make it the icon
