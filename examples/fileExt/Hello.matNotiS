@@ -1,0 +1,14 @@
+Title;"Hello\nBro"
+Des;"Hey bro whats up"
+Icon;REPO:/svg/extra/start.svg
+Sound;
+Dur;2000
+Buttons;%
+  Action;URL
+  Title;"Checkout My Profile!"
+  Value;"https://github.com/matwindow/"
+  -
+  Action;OpenF
+  Title;"Checkout my litle game i made"
+  Value;"C:/Game.matjs"
+%
