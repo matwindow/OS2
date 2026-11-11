@@ -1,5 +1,6 @@
 html, body {
   cursor: url("/OS2/themes/normal/cursors/normal.svg") 0 0, auto;
+  background-image:var(--os-bg,url(/OS2/themes/normal/normal/bg.png));
 }
 
 button,input[type="submit"],input[type="button"],input[type="image"] {
