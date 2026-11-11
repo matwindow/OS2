@@ -56,3 +56,7 @@ input[type="reset"] {
 input[type="file"] {
   cursor: url("/OS2/themes/normal/cursors/magic-up.svg") 0 0, auto;
 }
+
+.desktop .taskbar {
+  cursor:url("/OS2/themes/normal/cursors/magic.svg") 0 0, auto;
+}
