@@ -32,7 +32,7 @@ textarea,input[type="text"] {
 }
 
 input[type="color"] {
-  cursor: url("/OS2/themes/normal/cursors/crosshair.svg") 0 0, text;
+  cursor: url("/OS2/themes/normal/cursors/crosshair.svg") 16 16, text;
 }
 
 
