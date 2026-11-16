@@ -26,6 +26,32 @@
   <div class="taskbar">
     <div class="icons"></div>
   </div>
+  <div class="context-menu" id="context-menu">
+    <button id="copy-file" menu-fileonly=true>Copy File</button>
+    <button id="delete-file" menu-fileonly=true>Delete File</button>
+    <button id="paste-file" menu-fileonly=false>Paste File</button>
+    <button id="s-paste-file" menu-fileonly=false>Paste Shortcut To File</button>
+    <div id="new-file" menu-fileonly=false><button menu-normal onclick="window.user.newfile(window.sys.user.now,'Unnamed File.'+'txt',window.sys.user.desktop)">New File ➜</button><br>
+      <div id="doc"><button menu-normal onclick="window.user.newfile(window.sys.user.now,'Unnamed File.'+'txt',window.sys.user.desktop)">Document ➜</button><br>
+        <button menu-normal onclick="window.user.newfile(window.sys.user.now,'Unnamed File.'+'txt',window.sys.user.desktop)">.txt</button><br>
+        <button menu-normal onclick="window.user.newfile(window.sys.user.now,'Unnamed File.'+'matrtf',window.sys.user.desktop)">.matrtf</button><br>
+        <button menu-normal onclick="window.user.newfile(window.sys.user.now,'Unnamed File.'+'matdoc',window.sys.user.desktop)">.matdoc</button><br>
+      </div>
+      <div id="pic"><button menu-normal onclick="window.user.newfile(window.sys.user.now,'Unnamed File.'+'matrect',window.sys.user.desktop)">Picture ➜</button><br>
+        <button menu-normal onclick="window.user.newfile(window.sys.user.now,'Unnamed File.'+'matrect',window.sys.user.desktop)">.matrect</button><br>
+        <button menu-normal onclick="window.user.newfile(window.sys.user.now,'Unnamed File.'+'png',window.sys.user.desktop)">.png</button><br>
+        <button menu-normal onclick="window.user.newfile(window.sys.user.now,'Unnamed File.'+'jpeg',window.sys.user.desktop)">.jpeg</button><br>
+        <button menu-normal onclick="window.user.newfile(window.sys.user.now,'Unnamed File.'+'jpg',window.sys.user.desktop)">.jpg</button><br>
+        <button menu-normal onclick="window.user.newfile(window.sys.user.now,'Unnamed File.'+'svg',window.sys.user.desktop)">.svg</button><br>
+        <button menu-normal onclick="window.user.newfile(window.sys.user.now,'Unnamed File.'+'ico',window.sys.user.desktop)">.ico</button><br>
+      </div>
+      <div id="app"><button menu-normal onclick="window.user.newfile(window.sys.user.now,'Unnamed File.'+'txt',window.sys.user.desktop)">App ➜</button><br>
+        <button menu-normal onclick="window.user.newfile(window.sys.user.now,'Unnamed File.'+'matjs',window.sys.user.desktop)">.matjs</button><br>
+        <button menu-normal onclick="window.user.newfile(window.sys.user.now,'Unnamed File.'+'matexe',window.sys.user.desktop)">.matexe</button><br>
+        <button menu-normal onclick="window.user.newfile(window.sys.user.now,'Unnamed File.'+'matcmd',window.sys.user.desktop)">.matcmd</button><br>
+      </div>
+    </div>    
+  </div>
 </div>
 
 
