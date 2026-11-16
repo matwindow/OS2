@@ -12,6 +12,30 @@
   -webkit-backdrop-filter: blur(var(--taskbar-blur,5px)); 
 }
  
+#context-menu {
+  position: fixed;
+  z-index: 9999;
+  display: none;
+  width: 180px;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 4px;
+}
+
+#context-menu button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+#context-menu button:hover {
+  background: #e5e5e5;
+}
 
 #new-file, #doc, #pic, #app {
   position: relative;
