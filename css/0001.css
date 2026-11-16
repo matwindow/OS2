@@ -17,37 +17,55 @@
   position: relative;
 }
 
-
 #new-file > div,
+#new-file > br,
 #doc > button:not(:first-child),
+#doc > br,
 #pic > button:not(:first-child),
-#app > button:not(:first-child) {
+#pic > br,
+#app > button:not(:first-child),
+#app > br {
   display: none;
 }
 
-
-#new-file:hover > div {
+#new-file:hover > #doc,
+#new-file:hover > #pic,
+#new-file:hover > #app {
   display: block;
-}
-
-#new-file:hover {
-
-}
-
-
-#new-file > div {
-  position: relative;
+  position: absolute;
   left: 100%;
-  top: -28px; 
+  width: 140px;
   background: #ffffff;
-  border: 1px solid #ccc;
-  padding: 4px;
-  min-width: 140px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 2px 4px;
 }
 
+#new-file:hover > #doc { top: 0; border-top: 1px solid #ccc; }
+#new-file:hover > #pic { top: 28px; }
+#new-file:hover > #app { top: 56px; border-bottom: 1px solid #ccc; }
 
 #doc:hover > button:not(:first-child),
 #pic:hover > button:not(:first-child),
 #app:hover > button:not(:first-child) {
   display: block;
+  position: relative;
+  left: 100%;
+  top: -24px;
+  width: 120px;
+  background: #ffffff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+#doc:hover > button:nth-of-type(2),
+#pic:hover > button:nth-of-type(2),
+#app:hover > button:nth-of-type(2) {
+  border-top: 1px solid #ccc;
+}
+
+#doc:hover > button:last-of-type,
+#pic:hover > button:last-of-type,
+#app:hover > button:last-of-type {
+  border-bottom: 1px solid #ccc;
 }
