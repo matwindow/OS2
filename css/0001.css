@@ -12,3 +12,42 @@
   -webkit-backdrop-filter: blur(var(--taskbar-blur,5px)); 
 }
  
+
+#new-file, #doc, #pic, #app {
+  position: relative;
+}
+
+
+#new-file > div,
+#doc > button:not(:first-child),
+#pic > button:not(:first-child),
+#app > button:not(:first-child) {
+  display: none;
+}
+
+
+#new-file:hover > div {
+  display: block;
+}
+
+#new-file:hover {
+
+}
+
+
+#new-file > div {
+  position: relative;
+  left: 100%;
+  top: -28px; 
+  background: #ffffff;
+  border: 1px solid #ccc;
+  padding: 4px;
+  min-width: 140px;
+}
+
+
+#doc:hover > button:not(:first-child),
+#pic:hover > button:not(:first-child),
+#app:hover > button:not(:first-child) {
+  display: block;
+}
