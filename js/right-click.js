@@ -1,21 +1,45 @@
 const menu = document.getElementById('context-menu');
-const targetElement = document.querySelector('.desktop');
 
-targetElement.addEventListener('contextmenu', (e) => {
-  e.preventDefault();
-  let [x, y] = [e.clientX, e.clientY];
+if (menu) {
+  document.addEventListener('contextmenu', (event) => {
+    // Suppress the browser's native menu everywhere in the OS UI. The desktop
+    // container does not necessarily cover blank areas of the viewport.
+    event.preventDefault();
 
-  const isFile = e.composedPath().some(el => el instanceof Element && el.id && !el.closest('#context-menu') && el !== menu);
-  
-  menu.querySelectorAll('[menu-fileonly]').forEach(el => {
-    el.style.display = (el.getAttribute('menu-fileonly') === 'true') === isFile ? 'block' : 'none';
+    if (event.target instanceof Element && event.target.closest('#context-menu')) {
+      return;
+    }
+
+    const target = event.target instanceof Element ? event.target : null;
+    const isFile = Boolean(target && target.closest(
+      '.file, [data-file], [data-file-id], [menu-file]'
+    ));
+
+    menu.querySelectorAll('[menu-fileonly]').forEach((item) => {
+      const fileOnly = item.getAttribute('menu-fileonly') === 'true';
+      item.style.display = fileOnly === isFile ? '' : 'none';
+    });
+
+    // Show first so its dimensions can be measured before positioning.
+    menu.style.display = 'block';
+    const bounds = menu.getBoundingClientRect();
+    const margin = 8;
+    const left = Math.max(margin, Math.min(event.clientX, window.innerWidth - bounds.width - margin));
+    const top = Math.max(margin, Math.min(event.clientY, window.innerHeight - bounds.height - margin));
+
+    menu.style.left = `${left}px`;
+    menu.style.top = `${top}px`;
   });
 
-  menu.style.left = `${x}px`;
-  menu.style.top = `${y}px`;
-  menu.style.display = 'block';
-});
+  document.addEventListener('pointerdown', (event) => {
+    if (!(event.target instanceof Element) || !event.target.closest('#context-menu')) {
+      menu.style.display = 'none';
+    }
+  });
 
-document.addEventListener('click', () => {
-  menu.style.display = 'none';
-});
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      menu.style.display = 'none';
+    }
+  });
+}
