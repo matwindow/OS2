@@ -1,11 +1,14 @@
-window.ThisOS.taskbar={}
-window.ThisOS.taskbar.icons=[{icon:'/OS2/svg/extra/start'}]
-window.ThisOS.taskbar.iconcon=document.querySelector('.taskbar .icons');
-for (let This_Icon_Id of window.ThisOS.taskbar.icons){
-  const This_icon=document.createElement('div');
-  This_icon.classList.add('icon');
-  This_icon.style.setProperty('--bg-image', 'url("'+This_Icon_Id.icon+'")');
-  window.ThisOS.taskbar.iconcon.appendChild(This_icon);
+window.ThisOS ??= {};
+window.ThisOS.taskbar ??= {};
+window.ThisOS.taskbar.icons = [{ icon: '/OS2/svg/extra/start.svg' }];
+
+const iconContainer = document.querySelector('.taskbar .icons');
+
+if (iconContainer) {
+  for (const taskbarIcon of window.ThisOS.taskbar.icons) {
+    const icon = document.createElement('div');
+    icon.classList.add('icon');
+    icon.style.setProperty('--bg-image', `url("${taskbarIcon.icon}")`);
+    iconContainer.appendChild(icon);
+  }
 }
- 
- 
