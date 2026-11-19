@@ -1,0 +1,31 @@
+<html>
+  <head><title>Loading...</title> <script>
+  
+  const fileName = window.location.pathname.split("/").pop();
+
+  const cleanTitle = decodeURIComponent(fileName.replace(/\.html$/i, "")) || "Failed to load, please click Cntr+F5";
+
+
+  document.title = cleanTitle;
+</script><meta charset="UTF-8" /><style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        padding: 40px;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, sans-serif;
+        color: #ffffff;
+        background: radial-gradient(circle at top right, #2b1055 0%, #120826 45%, #05020d 100%);
+      }
+
+      a {
+        color: #f0f0f0;
+      }
+    </style></head>
+  <body>
+  <h1>What it means</h1>
+    <p>This code means the virtual C:/ disk has corrupted data, and needs to fix the virtual disk.</p>
+  </body>
+
+
+</html>
