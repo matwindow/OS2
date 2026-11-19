@@ -68,3 +68,6 @@ input[type="file"] {
 .desktop .taskbar {
   cursor:url("/OS2/themes/normal/cursors/magic.svg") 0 0, auto;
 }
+#bsod {
+  cursor: url("/OS2/themes/normal/cursors/mouse-unknown.svg") 0 0, cell;
+}
